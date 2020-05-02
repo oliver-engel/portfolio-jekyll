@@ -1,4 +1,4 @@
-$header-font: "Tiempos Headline";
+$header-font: "Apoc Trial";
 $header-font-weight: 400;
 $header-color: #000;
 $body-font: "Graphik";
@@ -116,6 +116,7 @@ h3,
 h4,
 h5,
 h6 {
+  text-transform: capitalize;
   font-feature-settings: "calt";
   margin-top: 0;
   // margin-bottom: .5em;
