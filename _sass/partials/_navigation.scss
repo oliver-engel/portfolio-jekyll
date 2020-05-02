@@ -1,0 +1,88 @@
+/* NAVIGATION */
+
+
+
+#red{
+  color: $red-text !important;
+}
+
+.nav {
+  z-index    : 1000;
+  position   : fixed;
+  top        : 0;
+  left       : 0;
+  width      : 100%;
+  // background-color : $nav-color;
+  transition: all 0.3s;
+  /* opacity:.3; */
+
+  // font-size  : .85rem;
+
+  animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.fade-in{
+  animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
+
+
+
+
+.nav-container {
+
+  // max-width       : 1000px;
+  // margin          : auto;
+  // -ms-flex-pack   : justify;
+  // -ms-flex-wrap   : wrap;
+  // flex-wrap       : wrap;
+  // justify-content : space-between;
+  // align-items: center;
+  width:100%;
+  left:5vw;
+  top:50px;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.right-side{
+align-self: flex-end;
+text-align: right;
+position: fixed;
+right: 5vw;
+}
+
+.active{
+  color: #0EFF43 !important;
+  text-decoration: none !important;
+  border-bottom:2px solid #0EFF43;
+}
+
+
+
+
+.links > a {
+  margin-right        : 25px;
+  color          : $off-white;
+  /* text-transform : uppercase; */
+  font-size      : 18px;
+  font-weight    : 500;
+  transition     : 0.3s;
+}
+
+.links a:hover {
+  // color           : $red-text;
+  text-decoration : none;
+  transition      : 0.3s;
+}

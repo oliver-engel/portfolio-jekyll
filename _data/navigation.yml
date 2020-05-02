@@ -1,0 +1,8 @@
+# specify main menu items here
+
+- text: Work
+  url: /
+- text: Words
+  url: /words
+- text: Info
+  url: /info

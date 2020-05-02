@@ -1,0 +1,32 @@
+// add font-face or font import declarations here
+@font-face {
+  font-family: 'Fakt Pro';
+  src: url('/assets/fonts/FaktPro-Normal.woff2') format('woff2'),
+    url('/fonts/FaktPro-Normal.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sailec';
+    src: url('/assets/fonts/Sailec-Regular.woff2') format('woff2'),
+        url('/assets/fonts/Sailec-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sailec';
+    src: url('/assets/fonts/Sailec-Bold.woff2') format('woff2'),
+        url('/assets/fonts/Sailec-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sailec';
+    src: url('/assets/fonts/Sailec-Medium.woff2') format('woff2'),
+        url('/assets/fonts/Sailec-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
