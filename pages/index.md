@@ -1,8 +1,9 @@
 ---
 layout: home
 title: Type
-description: All my fave fonts
 permalink: /
 section: home
+headline: Hello, Internet user.
+subhead: I'm Oliver, a digital product designer.
 
 ---

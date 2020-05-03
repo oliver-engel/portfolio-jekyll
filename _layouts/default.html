@@ -9,53 +9,20 @@ layout: compress
 
   <body>
 
-
     {% include navigation.html %}
 
-    <svg id="fader"></svg>
+    
 
+    <div class="full-page-content">
+      {{content}}
+    </div>
 
-    {% include full-height-header.html %}
-
-
-
-
-
-    <section class="content">
-
-
-          <div class="grid-2" style="padding-top:0px;">
-
-
-            <div class="portfolio-grid-item" id="item-one">
-              <a class="sibling-hover" data-tippy-content="Read Case Study" href="dashboard.html" id="boundless">
-                <img class="image-crop hvr-shrink" src="/assets/img/uploads/ch-new.jpg"></a>
-              <h3 class="sibling-highlight">Boundless</h3>
-              <p id="boundless-text" class="gray-text">Crafting a dashboard experience</p>
-            </div>
-
-            <div class="portfolio-grid-item" id="item-two">
-              <a class="sibling-hover" data-tippy-content="Read Case Study" href="pitch.html">
-                <img class="image-crop hvr-shrink" src="/assets/img/uploads/pitch-2.jpg"></a>
-              <h3 class="sibling-highlight">Pitch.ai</h3>
-              <p class="gray-text">Lean UX for an AI web app</p>
-            </div>
-          </div>
-
-
-
-
-
-
-    </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="/assets/js/scripts.js"></script>
     <script src="/assets/js/baffle.min.js"></script>
     <script src="/assets/js/rellax.min.js"></script>
-
-
 
   </body>
 

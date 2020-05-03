@@ -1,8 +1,10 @@
 ---
-layout: default
+layout: info
 title: Info
-description: Feast yer eyes
 permalink: /info
 section: home
+headline: Enamored by all things digital.
+subhead: Maker and collector of things.
+color: text-color
 
 ---
