@@ -1,0 +1,76 @@
+$header-font: "Apoc";
+$header-font-weight: 400;
+$header-color: #000;
+$body-font: "Graphik";
+$body-font-weight: 400;
+
+*{
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // text-transform: capitalize;
+  font-feature-settings: "calt";
+  margin-top: 0;
+  // margin-bottom: .5em;
+  // color: $header-color;
+  font-family: $header-font, sans-serif;
+  font-weight: $header-font-weight;
+  // line-height: 1.4em;
+}
+
+
+
+
+h1 {
+  user-select: none;
+  font-size: 100px;
+  // letter-spacing: -.06em;
+  line-height:140px;
+  font-weight:400;
+}
+
+h2 {
+  font-size: 1.999em;
+  letter-spacing: -.03em;
+}
+
+h3 {
+  font-size: 1.414em;
+  line-height: 1.3em;}
+
+h4 {font-size: 1.2em;}
+
+h5 {font-size: 1em;}
+
+p {
+  opacity:.6;
+  font-family: $body-font, sans-serif;
+  color:#595959;
+  margin-top: 0px;
+  line-height: 1.5rem;
+}
+
+*::selection {
+  background: #0EFF43;
+}
+
+b {
+  font-weight: 500;
+}
+
+
+.ml16 {
+  font-weight: $header-font-weight;
+  overflow: hidden;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}

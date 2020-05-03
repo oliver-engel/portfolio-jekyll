@@ -1,8 +1,4 @@
-$header-font: "Apoc Trial";
-$header-font-weight: 400;
-$header-color: #000;
-$body-font: "Graphik";
-$body-font-weight: 400;
+
 $body-color: #000;
 $purple: #302ecd;
 $light-purple: #EBEAFB;
@@ -21,7 +17,6 @@ $portfolio-p: #60768b;
 $bg-color: #171817;
 $gray-header-text: #8390a5;
 
-$off-white: #E9EDEA;
 
 
 /* FONTS */
@@ -97,73 +92,9 @@ a {
 
 
 
-a.active,
-a:active,
-a:focus,
-a:hover {
-  color: $red-text;
-  text-decoration: underline;
-}
-
-a:visited {
-  color: $red-text;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  // text-transform: capitalize;
-  font-feature-settings: "calt";
-  margin-top: 0;
-  // margin-bottom: .5em;
-  // color: $header-color;
-  font-family: $header-font, sans-serif;
-  font-weight: $header-font-weight;
-  // line-height: 1.4em;
-}
 
 
 
-
-h1 {
-  user-select: none;
-  font-size: 100px;
-  // letter-spacing: -.06em;
-  line-height:140px;
-  font-weight:400;
-}
-
-h2 {
-  font-size: 1.999em;
-  letter-spacing: -.03em;
-}
-
-h3 {
-  font-size: 1.414em;
-  line-height: 1.3em;}
-
-h4 {font-size: 1.2em;}
-
-h5 {font-size: 1em;}
-
-p {
-  opacity:.6;
-  font-family: "Graphik";
-  color:#595959;
-  margin-top: 0px;
-  line-height: 1.5rem;
-}
-
-*::selection {
-  background: #0EFF43;
-}
-
-b {
-  font-weight: 500;
-}
 
 ol {
   padding-left: 0px;
@@ -175,20 +106,7 @@ li {
 
 
 
-.ml16 {
-  // color: #402d2d;
-  // padding: 40px 0;
-  font-weight: $header-font-weight;
-  // font-size: 2em;
-  // text-transform: uppercase;
-  // letter-spacing: 0.5em;
-  overflow: hidden;
-}
 
-.ml16 .letter {
-  display: inline-block;
-  line-height: 1em;
-}
 
 
 

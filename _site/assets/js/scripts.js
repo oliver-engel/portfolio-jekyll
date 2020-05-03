@@ -25,7 +25,7 @@ anime.timeline({loop: false})
     targets: '.ml16 .letter',
     translateY: [120,0],
     easing: "easeOutExpo",
-    duration: 1400,
+    duration: 900,
     delay: (el, i) => 10 * i
   });
 
