@@ -35,20 +35,10 @@
 
 .nav-container {
   text-align: center;
-
-  // max-width       : 1000px;
-  // margin          : auto;
-  // -ms-flex-pack   : justify;
-  // -ms-flex-wrap   : wrap;
-  // flex-wrap       : wrap;
-  // justify-content : space-between;
-  // align-items: center;
   width:100%;
-  // left:5vw;
   top:50px;
   position: fixed;
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
+
 
 }
 
@@ -62,9 +52,9 @@ right: 5vw;
 .active{
   padding-bottom: 3px;
   opacity:1 !important;
-  color: #0EFF43 !important;
+  color: $green !important;
   text-decoration: none !important;
-  border-bottom:2px solid #0EFF43;
+  border-bottom:2px solid $green;
 }
 
 

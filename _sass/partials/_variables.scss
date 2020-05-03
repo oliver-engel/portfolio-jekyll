@@ -5,6 +5,9 @@ $black: #141415;
 $gray: #3c3c3c;
 $nav-color: #fff1e8;
 $blue: #2D3149;
+$green: #0EFF43;
+
+$red: #e61f1f;
 
 
 $text-color: white;
@@ -16,13 +19,7 @@ $grey-bg-color: rgb(243,243,243);
 $hairline-color: rgb(230,230,230);
 $selection-bg-color: rgba(255,255,100,0.5);
 
-// typographic defaults
-// $base-font: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue;
-$code-font: Courier, monospace;
-$base-font-size: 62.5%;
-$base-font-weight: 300;
-$bold-font-weight: 600;
-$base-line-height: 1.5;
+
 
 // viewport breakpoints
 $screen-xs-min: 480px;

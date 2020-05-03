@@ -23,7 +23,7 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='let
 anime.timeline({loop: false})
   .add({
     targets: '.ml16 .letter',
-    translateY: [-70,0],
+    translateY: [120,0],
     easing: "easeOutExpo",
     duration: 1400,
     delay: (el, i) => 10 * i
