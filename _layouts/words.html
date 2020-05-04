@@ -3,10 +3,23 @@ layout: default
 title: Words
 ---
 
-{% include full-height-header.html %}
 
-<section class="content">
+<section class="content content-narrow">
 
-  <!-- {% include project-grid.html %} -->
+
+  {% for post in site.posts %}
+  <div class="blog-entry">
+    <img src="{{post.image}}">
+
+    <div>
+      <!-- <p class="blog-date">8 MAY 19</p> -->
+      <h3>{{post.title}}</h3>
+      <p>{{post.description}}</p>
+      <p><a href="">Read More</a></p>
+    </div>
+
+  </div>
+  {% endfor %}
+
 
 </section>
