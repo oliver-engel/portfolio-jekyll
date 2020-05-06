@@ -3,23 +3,28 @@ layout: default
 title: Words
 ---
 
+<body class="words-template">
 
 <section class="content content-narrow">
 
 
   {% for post in site.posts %}
-  <div class="blog-entry">
-    <img src="{{post.image}}">
+  <div class="blog-wrapper">
+    <a class="blog-entry" href="{{post.url}}">
+      <img src="{{post.image}}">
 
-    <div>
-      <!-- <p class="blog-date">8 MAY 19</p> -->
-      <h3>{{post.title}}</h3>
-      <p>{{post.description}}</p>
-      <p><a href="">Read More</a></p>
-    </div>
+      <div>
+        <!-- <p class="blog-date">8 MAY 19</p> -->
+        <h3>{{post.title}}</h3>
+        <p>{{post.description}}</p>
+        <p><span id="read-more">Read More</span></p>
+      </div>
 
+    </a>
   </div>
   {% endfor %}
 
 
 </section>
+
+</body>

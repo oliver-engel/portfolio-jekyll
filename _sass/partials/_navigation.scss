@@ -19,7 +19,8 @@
 
   padding:10px 20px 10px 20px;
   border-radius:3px;
-  background-color: rgba(23,24,23, .95);
+  background-color: rgba(22,22,24, .95);
+
 
 }
 
@@ -35,7 +36,7 @@
 }
 
 .active {
-  animation: 0.2s cubic-bezier(0.87, 0, 0.13, 1) 0s 1 active_link_color;
+  // animation: 0.2s cubic-bezier(0.87, 0, 0.13, 1) 0s 1 active_link_color;
   padding-bottom: 3px;
   opacity: 1 !important;
   color: $green !important;

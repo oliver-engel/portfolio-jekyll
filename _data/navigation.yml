@@ -4,5 +4,7 @@
   url: /
 - text: Words
   url: /words
+- text: Photo
+  url: /photo
 - text: Info
   url: /info
