@@ -1,7 +1,7 @@
-$header-font: "Apoc";
+$header-font: "Marr Sans Web";
 $header-font-weight: 400;
 $header-color: #000;
-$body-font: "Graphik";
+$body-font: "Marr Sans Web";
 $body-font-weight: 400;
 
 *{
@@ -18,57 +18,65 @@ h6 {
   margin-top: 0;
   font-family: $body-font, sans-serif;
   font-weight: $header-font-weight;
-  margin-bottom:.25em;
+  margin-bottom:.2em;
 }
-
-
 
 
 h1 {
   margin-top: 0;
-
+  margin-bottom:20px;
   font-family: $header-font, sans-serif;
+  // font-family: "Ogg", sans-serif;
   user-select: none;
-  font-size: 100px;
-  // letter-spacing: -.06em;
-  line-height:140px;
+  font-size: 4em;
+  letter-spacing: -.04em;
+  line-height:1.1em;
   font-weight:400;
 }
 
 h2 {
   font-size: 1.999em;
+  line-height: 1.3em;
   letter-spacing: -.03em;
 }
 
 h3 {
   font-size: 1.414em;
-  line-height: 1.3em;}
+  line-height: 1.3em;
+}
 
 h4 {font-size: 1.2em;}
 
 h5 {font-size: 1em;}
 
 p {
-  font-family: $body-font, sans-serif;
+  font-family: "$body-font", sans-serif;
   color:$text-gray;
-  // opacity:.6;
+  // opacity:.5;
   margin-top: 0px;
   font-size:1em;
   line-height: 1.8em;
-}
-
-*::selection {
-  background: #0EFF43;
 }
 
 b {
   font-weight: 500;
 }
 
+.subhead{
+  font-family:"Fakt Mono";
+  text-transform: uppercase;
+  font-size: .8em;
+  letter-spacing: .1em;
+  opacity:50%;
+
+}
+
+
 
 .ml16 {
   font-weight: $header-font-weight;
   overflow: hidden;
+
 }
 
 .ml16 .letter {

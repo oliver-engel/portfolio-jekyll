@@ -1,17 +1,15 @@
-<div class="grid-2" style="padding-top:0px;">
+<div class="grid-2">
 
-
-  <div class="portfolio-grid-item" id="item-one">
-    <a class="sibling-hover" data-tippy-content="Read Case Study" href="dashboard.html" id="boundless">
-      <img class="image-crop hvr-shrink" src="/assets/img/uploads/ch-new.jpg"></a>
-    <h3>Boundless</h3>
-    <p>Crafting a dashboard experience</p>
+{% for page in site.pages %}
+  {% if page.url contains "/work"%}
+  <div class="portfolio-grid-item">
+    <a href="{{page.url}}" id="boundless">
+      <img src="{{page.thumb}}">
+    <h3>{{page.title}}</h3>
+    <p>{{page.description}}</p>
+    </a>
   </div>
+  {% endif %}
+{% endfor %}
 
-  <div class="portfolio-grid-item" id="item-two">
-    <a class="sibling-hover" data-tippy-content="Read Case Study" href="pitch.html">
-      <img class="image-crop hvr-shrink" src="/assets/img/uploads/pitch-2.jpg"></a>
-    <h3>Pitch.ai</h3>
-    <p>Lean UX for an AI web app</p>
-  </div>
 </div>
