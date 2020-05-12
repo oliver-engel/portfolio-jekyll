@@ -4,11 +4,9 @@ title: Nailing the Details in Mobile Icon Design
 date: '2020-05-03 12:00:00'
 categories: misc
 description: Some fun tidbits I gathered during a product design internship at Collective Health.
-image: /assets/img/blog/pixel-fit.jpg
-hero: /assets/img/blog/pixel-fit-header.png
+thumb: /assets/img/blog/icondesign/thumb.jpg
+hero: /assets/img/blog/icondesign/hero.png
 permalink: /words/mobile-icon-design
-
-theme: post-theme
 ---
 
 
@@ -17,7 +15,7 @@ I recently had the opportunity to work for [Collective Health](https://collectiv
 
 Icons for mobile apps have their own set of challenges, because you’re working with a lot less space and resolution than on a desktop. Here are four tricks I learned that helped me get them right:
 
-## Optically matching gray values
+#### Optically matching gray values
 
 ![Here, the icon label looks darker (and is darker). But when seen from a normal viewing distance, they appear to be the same color.](https://cdn-images-1.medium.com/max/3586/1*soFC6BCakCbor31KhFGStQ.jpeg)*Here, the icon label looks darker (and is darker). But when seen from a normal viewing distance, they appear to be the same color.*
 

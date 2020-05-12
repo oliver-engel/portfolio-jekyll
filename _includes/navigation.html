@@ -2,10 +2,10 @@
 
   <div class="nav-container">
 
-    <p class="name">Oliver Engel</p>
+    <p class="name" onclick="location.href='/'">Oliver Engel</p>
 
     <div class="links">
-      <a href="/" {% if page.url == "/" or page.url contains "/work" %}class="active" {% endif %}>
+      <a href="/" {% if page.url == "/" or page.url contains "/work" or page.url contains "/play" %}class="active" {% endif %}>
         Work</a>
       <a href="/words" {% if page.url contains "/words"%}class="active" {% endif %}>
         Words</a>
@@ -15,6 +15,6 @@
         Info</a>
     </div>
 
-    <p class="subhead updated-last" style="margin-bottom: 2px;">Updated 5.20</p>
+    <p class="subhead updated-last" style="margin-bottom: 0px;">Updated 5.20</p>
   </div>
 </nav>

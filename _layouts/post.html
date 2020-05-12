@@ -2,23 +2,18 @@
 layout: default
 ---
 
-<body class="post-theme">
-
+<body class="blog-post">
 
   <section class="content content-narrow">
 
-    <div class="post-image">
-      <h2>{{page.title}}</h2>
-      <p>{{page.description}}</p>
+    <h2>{{page.title}}</h2>
+    <p>{{page.description}}</p>
+
+    <img class="post-image" src="{{page.hero}}">
+
+    <div class="blog-markdown">
+      {{content}}
     </div>
-
-    <!-- <div class="post-header">
-      <h2>{{page.title}}</h2>
-      <p>{{page.description}}</p>
-    </div> -->
-
-
-  {{content}}
 
   </section>
 

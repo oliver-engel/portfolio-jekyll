@@ -4,7 +4,7 @@ title: Wizard of Oz-ing AI Apps
 date: '2020-05-03 12:00:00'
 categories: misc
 description: Reflecting on the experience of crafting a Wizard of Oz evaluation.
-image: /assets/img/blog/wizard.jpg
+thumb: /assets/img/blog/wizardofoz/thumb.jpg
 hero:
 permalink: /words/wizard-of-oz
 ---

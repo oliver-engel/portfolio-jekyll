@@ -6,23 +6,24 @@ jQuery(document).ready(function($) {
 });
 
 
-$('a').click(function(e) {
-e.preventDefault();
-newLocation = this.href;
-$('.full-page-content').fadeOut(200, newpage);
+
+$(window).scroll(function() {
+   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+     $("footer").css("visibility", "visible");
+     $("footer").fadeIn();
+
+   }
 });
-function newpage() {
-window.location = newLocation;
-}
+
 
 
 // Wrap every letter in a span
-var textWrapper = document.querySelector('.ml16');
+var textWrapper = document.querySelector('.animated-header');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({loop: false})
   .add({
-    targets: '.ml16 .letter',
+    targets: '.animated-header .letter',
     translateY: [120,0],
     easing: "easeOutExpo",
     duration: 900,
@@ -39,31 +40,6 @@ anime.timeline({loop: false})
       });
 
 
-
-
-  document.addEventListener('DOMContentLoaded', function() {
-    if (!window.AnimationEvent) { return; }
-    var anchors = document.getElementsByTagName('a');
-
-      for (var idx=0; idx<anchors.length; idx+=1) {
-        if (anchors[idx].hostname !== window.location.hostname || anchors[idx].pathname === window.location.pathname) {
-    continue;
-  }
-          anchors[idx].addEventListener('click', function(event) {
-              var fader = document.getElementById('fader'),
-                  anchor = event.currentTarget;
-
-              var listener = function() {
-                  window.location = anchor.href;
-                  fader.removeEventListener('animationend', listener);
-              };
-              fader.addEventListener('animationend', listener);
-
-              event.preventDefault();
-              fader.classList.add('fade-in');
-         });
-     }
-  });
 
 
 

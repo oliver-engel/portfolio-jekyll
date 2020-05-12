@@ -1,8 +1,11 @@
 ---
 layout: project
-permalink: work/etcetera
+permalink: play/etcetera
 section: home
 title: Et Cetera
-thumb: /assets/img/uploads/ross2.gif
-description: Explorations in programmatic art & animation
+thumb: /assets/img/uploads/etcetera/thumb.png
+hero: /assets/img/uploads/etcetera/thumb.png
+
+description: Art & animation
+category: Side Project
 ---
