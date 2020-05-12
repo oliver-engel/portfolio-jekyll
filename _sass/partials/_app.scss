@@ -103,6 +103,18 @@ video {
 .animated-header {
   animation-delay: 0.6s;
   @include fadeContentIn(2.5s);
+
+  @media (max-width: $screen-sm-min){
+    display:none;
+  }
+}
+
+.mobile-header{
+  display:none;
+  @media (max-width: $screen-sm-min){
+    display: block;
+  }
+
 }
 
 .about-module {
@@ -114,6 +126,10 @@ video {
 .me-moji {
   padding-bottom: 10px;
   @include scaleContentIn($quick, 0.7);
+
+  @media(max-width: $screen-sm-min){
+    display:none;
+  }
 }
 
 .img-wrapper-portfolio {
