@@ -14,7 +14,20 @@ layout: default
     <div class="blog-markdown">
       {{content}}
     </div>
+    <hr style="margin-top:100px;">
+
+    {% if page.previous.url %}
+    <p class="subhead">Next post</p>
+    <a href="{{page.previous.url}}"><h3>{{page.previous.title}}</h3></a>
+
+    {% else %}
+      <p class="subhead">Previous post</p>
+      <a href="{{page.next.url}}"><h3>{{page.next.title}}</h3></a>
+
+    {% endif%}
 
   </section>
+
+
 
 </body>

@@ -25,6 +25,10 @@ footer {
 
   .footnote {
     text-align: center;
+
+    @media (max-width: $screen-sm-min){
+      display: none;
+    }
   }
 
   .resume {}
