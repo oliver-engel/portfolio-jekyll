@@ -80,6 +80,8 @@ webp:
   # Whether to search in nested directories or not
   nested: true
 
+  formats: [".jpeg", ".jpg", ".png", ".tiff"]
+
 #include:
 #  - _redirects
 #  - _headers
