@@ -8,8 +8,14 @@ layout: compress
   {% include head.html %}
 
   <body>
-
     {% include navigation.html %}
+
+    <script src="/assets/js/fader.js"></script>
+    <svg id="fader"></svg>
+    <script>
+      fadeInPage();
+    </script>
+
 
     <div class="full-page-content">
       {{content}}
