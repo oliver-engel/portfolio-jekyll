@@ -65,23 +65,6 @@ kramdown:
 # Uncomment before use
 
 
-plugins:
-  - jekyll-webp
-
-webp:
-  enabled: true
-  # The quality of the webp conversion 0 to 100 (where 100 is least lossy)
-  quality: 75
-
-  # List of directories containing images to optimize, nested directories will only be checked if `nested` is true
-  # By default the generator will search for a folder called `/img` under the site root and process all jpg, png and tiff image files found there.
-  img_dir: ["/assets/img/"]
-
-  # Whether to search in nested directories or not
-  nested: true
-
-  formats: [".jpeg", ".jpg", ".png", ".tiff"]
-
 #include:
 #  - _redirects
 #  - _headers

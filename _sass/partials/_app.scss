@@ -156,3 +156,14 @@ hr {
   background-color: #2D3149;
   height: 40vh;
 }
+
+.photo-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:4em;
+
+  img{
+    // max-height: 70vh;
+    // width:auto;
+  }
+}

@@ -1,12 +1,23 @@
 ---
 layout: default
-title: Photo
 ---
 
-{% include full-height-header.html %}
+<!-- {% include full-height-header.html %} -->
 
 <section class="content">
 
-  <!-- {% include project-grid.html %} -->
+  <div class="photo-grid">
+
+    <img src="https://images.unsplash.com/photo-1589485797889-3a91fc2e9881?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80">
+
+    {% for image in site.static_files %}
+      {% if image.path contains '/assets/img/photo/' %}
+              <img class="masonry-photo" src="{{ site.baseurl }}{{ image.path }}" alt="" />
+      {% endif %}
+  {% endfor %}
+
+  </div>
+
+
 
 </section>
