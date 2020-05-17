@@ -59,13 +59,17 @@ h2 {
 
   @media (max-width: $screen-md-min){
     font-size: 2.369em;
-
   }
 }
 
 h3 {
   font-size: 2.369em;
   line-height: 1.3em;
+  
+  @media (max-width: $screen-md-min){
+    font-size: 1.777em;
+  }
+
 }
 
 h4 {

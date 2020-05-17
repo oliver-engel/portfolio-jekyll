@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: play/rrgs
+permalink: onhold/rrgs
 section: home
 title: R.R.G.S.
 thumb: /assets/img/uploads/rrgs/thumb.png

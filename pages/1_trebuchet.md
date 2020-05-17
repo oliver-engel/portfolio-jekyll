@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: play/trebuchet
+permalink: onhold/trebuchet
 section: home
 title: Microsoft Hacking STEM
 thumb: /assets/img/uploads/microsoft/hacking-stem.jpg

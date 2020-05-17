@@ -33,12 +33,9 @@ body {
   background: gray;
 }
 
-
-
 img {
   border-radius: 1px;
   width: 100%;
-  background-color: $bg-color;
   display: block;
 }
 
@@ -119,9 +116,18 @@ video {
 }
 
 .about-module {
-  padding-top: 20vh;
+  // padding-top: 20vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  align-items: center;
+
+  @media (max-width: $screen-sm-min){
+    grid-template-columns: 1fr;
+    .profile-pic{
+      display: none;
+    }
+  }
 }
 
 .me-moji {
@@ -155,15 +161,4 @@ hr {
 .image-header {
   background-color: #2D3149;
   height: 40vh;
-}
-
-.photo-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap:4em;
-
-  img{
-    // max-height: 70vh;
-    // width:auto;
-  }
 }

@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: play/protagonist
+permalink: onhold/protagonist
 section: home
 title: Protagonist
 thumb: /assets/img/uploads/protagonist/thumb.png

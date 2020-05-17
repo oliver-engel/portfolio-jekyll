@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: play/fernet
+permalink: onhold/fernet
 section: home
 title: Fernet
 thumb: /assets/img/uploads/fernet/thumb.png

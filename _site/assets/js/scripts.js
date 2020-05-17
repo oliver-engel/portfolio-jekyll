@@ -2,8 +2,76 @@ jQuery(document).ready(function($) {
 
   var rellax = new Rellax('.rellax');
 
+  $('.masonry-grid').masonry({
+  // options
+  itemSelector: '.masonry-image',
+  columnWidth: 200
+});
+
 
 });
+
+var imgCounter = 0;
+
+function nextImage(){
+
+  //Get all the images into an array
+  var photoArray = document.getElementsByClassName('photo-grid-image');
+
+  //If we get to the end of the array
+  if(imgCounter === photoArray.length - 1){
+    $(photoArray[imgCounter]).hide();
+    imgCounter = 0;
+    $(photoArray[imgCounter]).css("display", "flex").hide().fadeIn(450);
+  }
+
+  else{
+  //Hide current image, then fade in the next one
+    $(photoArray[imgCounter]).hide();
+    $(photoArray[imgCounter + 1]).css("display", "flex").hide().fadeIn(450);
+    imgCounter++;
+  }
+  //Increment for the next image
+  console.log(imgCounter);
+};
+
+
+function prevImage(){
+
+  //Get all the images into an array
+  var photoArray = document.getElementsByClassName('photo-grid-image');
+
+  //If we get to the beginning of the array
+  if(imgCounter === 0){
+    $(photoArray[imgCounter]).hide();
+    imgCounter = photoArray.length - 1;
+    $(photoArray[imgCounter]).css("display", "flex").hide().fadeIn(300);
+  }
+
+  //Hide current image, show the previous one
+  else{
+    $(photoArray[imgCounter]).hide();
+    $(photoArray[imgCounter - 1]).css("display", "flex").hide().fadeIn(300);
+    imgCounter--;
+  }
+};
+
+//ARROW KEY FUNCTIONS
+
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '37') {
+       prevImage();
+    }
+    else if (e.keyCode == '39') {
+       nextImage();
+    }
+
+}
 
 
 

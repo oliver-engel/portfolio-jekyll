@@ -1,23 +1,50 @@
 ---
-layout: default
+layout: default-sidebar
 ---
 
-<!-- {% include full-height-header.html %} -->
+<body class="light-theme">
 
-<section class="content">
-
-  <div class="photo-grid">
-
-    <img src="https://images.unsplash.com/photo-1589485797889-3a91fc2e9881?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80">
-
-    {% for image in site.static_files %}
-      {% if image.path contains '/assets/img/photo/' %}
-              <img class="masonry-photo" src="{{ site.baseurl }}{{ image.path }}" alt="" />
-      {% endif %}
-  {% endfor %}
+  <div class=" top-nav mobile">
+    <p class="name" onclick="location.href='/'">Oliver Engel<br><span style="color:Gray;">Photography</span></p>
+    <a href="/">← Back to Work</a>
 
   </div>
 
+    <div class="photo-page">
+
+      <div class="sidebar-wrapper desktop">
+
+        <section class="sidebar">
+          <p class="name" onclick="location.href='/'">Oliver Engel<br><span style="color:Gray;">Photography</span></p>
+        </section>
+
+        <section class="site-return" >
+          <a href="/">← Back to Work</a>
+        </section>
+
+      </div>
 
 
-</section>
+      <div class="photo-grid-wrapper desktop">
+
+        <div class="next" onclick="nextImage();"></div>
+        <div class="back" onclick="prevImage();"></div>
+
+        <div class="photo-grid">
+          {% for image in site.static_files %}
+            {% if image.path contains '/assets/img/photo/' %}
+                    <img class="photo-grid-image" class="showImage" loading="lazy" src="{{ site.baseurl }}{{ image.path }}" alt="" />
+            {% endif %}
+          {% endfor %}
+        </div>
+
+      </div>
+
+      <div class="mobile">
+        {% for image in site.static_files %}
+          {% if image.path contains '/assets/img/photo/' %}
+                  <img class="photo-grid-image-mobile" class="showImage" loading="lazy" src="{{ site.baseurl }}{{ image.path }}" alt="" />
+          {% endif %}
+        {% endfor %}
+      </div>
+</body>

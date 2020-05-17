@@ -11,7 +11,8 @@
 }
 
 .nav-container {
-  max-width: $content-max-width;
+  width: $content-max-width;
+  max-width:100%;
   margin: auto;
   -ms-flex-pack: justify;
   -ms-flex-wrap: wrap;
@@ -23,6 +24,8 @@
       font-size:.75em;
     }
 
+
+
 }
 
 .nav .nav-container {
@@ -30,6 +33,12 @@
   height: 100px;
   align-items: center;
   -ms-flex-align: center;
+
+  @media (max-width: $screen-md-min){
+    display:block !important;
+    text-align: center;
+    padding-top:20px;
+  }
 }
 
 .name {

@@ -6,6 +6,10 @@ title: Visual Rats
 thumb: /assets/img/uploads/visualrats/thumb.png
 hero: /assets/img/uploads/visualrats/hero.png
 
-description: Various concoctions & experiments
+description: Computational art
 category: Miscellaneous
 ---
+
+### Stuff coming this way soon.
+
+<a href="/">Back to Work</a>
